@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		navigator.geolocation.getCurrentPosition(function(pos){
+			console.log(pos)
+			document.getElementsByTagName('div')[0].innerHTML = JSON.stringify(pos)
+		})
+	</script>
+</html>
